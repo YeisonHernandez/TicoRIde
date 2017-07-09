@@ -10,12 +10,6 @@
 
 <body>
     <div class="back-holder">
-        <!--<nav class="nav-menu">
-            <ul class="menu-list">
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Home</a></li>
-            </ul>
-        </nav>-->
         <div class="exterior-cont-sign">
             <div class="interior-left-cont">
                 <div class="slogan-cont">
@@ -29,16 +23,25 @@
                 <div class="backg-opaque">
                     <div class="form-cont">
                         <div class="sign-options-cont">
-                            <h1><a href=" ">Sign in</a> or <a href=" ">Sign Up</a></h1>
+                            <h1><a href="./account.html">Sign in</a> or <a href="./login.html">Sign Up</a></h1>
                         </div>
                         <form id="user-log-info ">
+                            <label for="fullname">Fullname</label>
+                            <input type="text" name="fullname">
+                            <label for="user-email">Email</label>
+                            <input type="email" name="user-email">
+                            <label for="user-phone">Phone</label>
+                            <input type="number" name="user-phone">
                             <label for="username">User name</label>
                             <input type="text" name="username">
                             <label for="user-password">Password</label>
-                            <input type="password" name="pass" value="user-password">
+                            <input type="password" name="user-password">
+                            <label for="pass-repeat">Repeat password</label>
+                            <input type="password" name="pass-repeat">
                             <input type="submit" value="Sign in" name="log-submit" form="user-log-info">
                         </form>
-                        <a href=" ">Forgot password?</a>
+                        <input type="checkbox" name="terms">
+                        <label for="terms">I agree all statements and conditions</label>
                     </div>
                 </div>
             </div>
