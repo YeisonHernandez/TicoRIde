@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TicoRides</title>
+    <title>Dashboar -TicoRides-</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
@@ -32,54 +32,39 @@
     <div class="home-hero">
         <h1>Welcome to TicoRides.com</h1>
     </div>
-    <div class="dashboard">
-        <label for="search-cont">Select for a ride</label>
-        <form id="search-cont">
-            <label for="from-inp">From</label>
-            <input type="text" name="from-inp" id="inp-from">
-            <label for="to-inp">To</label>
-            <input type="text" name="to-inp" id="inp-to">
-            <input type="submit" value="Find my Ride!" id="subt-search">
-        </form>
+    <div class="page-title-cont">
+        <h2>Dashboard</h2>
     </div>
-    <div class="results-cont">
-        <div>
-            <p>Results for Rides that matches your criteria</p>
+    <div class="main-cont">
+        <div class="nav-history">
+
         </div>
-        <div class="table-results-cont">
-            <table>
+        <div class="rides-cont">
+            <div class="label-table">
+                <label for="my-rides-table">My rides</label>
+            </div>
+            <table id="my-rides-tables">
                 <tr class="row-titles">
-                    <td><b>User</b></td>
+                    <td><b>Name</b></td>
                     <td><b>Start</b></td>
                     <td><b>End</b></td>
-                    <td></td>
+                    <td><b>Actions</b></td>
                 </tr>
                 <tr class="row">
-                    <td>barroyo</td>
+                    <td>Brete</td>
                     <td>Barrio Los Angeles</td>
                     <td>Ciudad Quesada</td>
-                    <td>View</td>
+                    <td>Edit-Delete</td>
                 </tr>
                 <tr class="row-peer">
-                    <td>barroyo</td>
-                    <td>Los Angeles</td>
+                    <td>Casa</td>
+                    <td>Barrio Los Angeles</td>
                     <td>Ciudad Quesada</td>
-                    <td>View</td>
-                </tr>
-                <tr class="row">
-                    <td>dyluna</td>
-                    <td>Ciudad Quesada</td>
-                    <td>San Pedro</td>
-                    <td>View</td>
+                    <td>Edit-Delete</td>
                 </tr>
             </table>
         </div>
     </div>
-    <footer>
-        <div>
-
-        </div>
-    </footer>
 </body>
 
 </html>
