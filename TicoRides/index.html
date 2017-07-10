@@ -5,11 +5,79 @@
     <title>TicoRides</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="header-cont">
+            <nav class="nav-menu">
+                <ul class="menu-list">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Rides</a></li>
+                    <li><a href="">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="header-logo">
+                <img src="./Resources/logoTicoRides.png" alt="TicoRides logo ">
+            </div>
+            <div class="logo-account-cont">
+                <div class="user-account">
+                    <img src="./Resources/Orange.png" alt="user-img">
+                    <p>Yrhernandez</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="home-hero">
+        <h1>Welcome to TicoRides.com</h1>
+    </div>
+    <div class="dashboard">
+        <label for="search-cont">Select for a ride</label>
+        <form id="search-cont">
+            <label for="from-inp">From</label>
+            <input type="text" name="from-inp" id="inp-from">
+            <label for="to-inp">To</label>
+            <input type="text" name="to-inp" id="inp-to">
+            <input type="submit" value="Find my Ride!" id="subt-search">
+        </form>
+    </div>
+    <div class="results-cont">
+        <div>
+            <p>Results for Rides that matches your criteria</p>
+        </div>
+        <div class="table-results-cont">
+            <table>
+                <tr class="row-titles">
+                    <td><b>User</b></td>
+                    <td><b>Start</b></td>
+                    <td><b>End</b></td>
+                    <td></td>
+                </tr>
+                <tr class="row">
+                    <td>barroyo</td>
+                    <td>Barrio Los Angeles</td>
+                    <td>Ciudad Quesada</td>
+                    <td>View</td>
+                </tr>
+                <tr class="row-peer">
+                    <td>barroyo</td>
+                    <td>Los Angeles</td>
+                    <td>Ciudad Quesada</td>
+                    <td>View</td>
+                </tr>
+                <tr class="row">
+                    <td>dyluna</td>
+                    <td>Ciudad Quesada</td>
+                    <td>San Pedro</td>
+                    <td>View</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
 
+    </footer>
 </body>
 
 </html>
