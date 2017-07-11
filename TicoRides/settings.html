@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Dashboar -TicoRides-</title>
+    <title>Settings-TicoRides-</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -34,37 +34,29 @@
         <h1>Welcome to TicoRides.com</h1>
     </div>
     <div class="page-title-cont">
-        <h2>Dashboard</h2>
+        <h2>Settings</h2>
     </div>
     <div class="main-cont">
-        <div class="nav-history">
-            <i class="material-icons">keyboard_arrow_right</i>
+        <div class="nav-history-settings">
             <a href="">Dashboard</a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="">Settings</a>
         </div>
-        <div class="rides-cont">
-            <div class="label-table">
-                <label for="my-rides-table">My rides</label>
+        <div class="settings-cont">
+            <div class="settings-form-cont">
+                <form id="usrform">
+                    <label for="settings-fname">Fullname</label>
+                    <input type="text" name="settings-fname">
+                    <label for="settings-speed">Speed Average</label>
+                    <input type="text" name="settings-speed">
+                    <label for="settings-about-me">About me</label>
+                    <textarea rows="4" cols="50" name="settings-about-me" form="usrform">    </textarea>
+                </form>
+                <div class="usr-options-form">
+                    <input type="submit" name="usr-save" value="Save">
+                    <a href="">Cancel</a>
+                </div>
             </div>
-            <table id="my-rides-tables">
-                <tr class="row-titles">
-                    <td><b>Name</b></td>
-                    <td><b>Start</b></td>
-                    <td><b>End</b></td>
-                    <td><b>Actions</b></td>
-                </tr>
-                <tr class="row">
-                    <td>Brete</td>
-                    <td>Barrio Los Angeles</td>
-                    <td>Ciudad Quesada</td>
-                    <td>Edit-Delete</td>
-                </tr>
-                <tr class="row-peer">
-                    <td>Casa</td>
-                    <td>Barrio Los Angeles</td>
-                    <td>Ciudad Quesada</td>
-                    <td>Edit-Delete</td>
-                </tr>
-            </table>
         </div>
     </div>
 </body>
