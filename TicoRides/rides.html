@@ -8,70 +8,74 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="css/styles.css" rel="stylesheet">
 </head>
-<header>
-    <div class="header-cont">
-        <nav class="nav-menu">
-            <ul class="menu-list">
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Rides</a></li>
-                <li><a href="">Settings</a></li>
-            </ul>
-        </nav>
-        <div class="header-logo">
-            <img src="./Resources/logoTicoRides.png" alt="TicoRides logo ">
+
+<body>
+
+    <header>
+        <div class="header-cont">
+            <nav class="nav-menu">
+                <ul class="menu-list">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Rides</a></li>
+                    <li><a href="">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="header-logo">
+                <img src="./Resources/logoTicoRides.png" alt="TicoRides logo ">
+            </div>
+            <div class="logo-account-cont">
+                <div class="user-account">
+                    <img src="./Resources/Orange.png" alt="user-img">
+                    <p>Yrhernandez</p>
+                </div>
+            </div>
         </div>
-        <div class="logo-account-cont">
-            <div class="user-account">
-                <img src="./Resources/Orange.png" alt="user-img">
-                <p>Yrhernandez</p>
+    </header>
+    <div class="home-hero">
+        <h1>Welcome to TicoRides.com</h1>
+    </div>
+    <div class="page-title-cont">
+        <h2>Rides</h2>
+    </div>
+    <div class="nav-history-settings">
+        <a href="">Dashboard</a>
+        <i class="material-icons">keyboard_arrow_right</i>
+        <a href="">My Ride</a>
+        <i class="material-icons">keyboard_arrow_right</i>
+        <a href="">Edit</a>
+    </div>
+    <div class="holder">
+        <div class="forms-cont">
+            <div class="form-ride">
+                <form id="ride-form-basic">
+                    <label for="ride-name">Ride Name</label>
+                    <input type="text" name="ride-name">
+                    <label for="ride-start-point">Start from</label>
+                    <input type="text" name="ride-start-point">
+                    <label for="ride-end-point">End</label>
+                    <input type="text" name="ride-end-point">
+                    <label for="ride-description">Description</label>
+                    <textarea rows="a" cols="10" name="ride-description"></textarea>
+                </form>
+            </div>
+            <div class="form-ride">
+                <form id="ride-form-schedule">
+                    <b>When</b>
+                    <label for="departure">Departure</label>
+                    <input type="number" name="departure">
+                    <label for="arrival">Estimate arrival</label>
+                    <input type="number" name="arrival">
+                    <br>
+                    <b>Select days</b>
+                    <label><input type="checkbox" name="monday">Monday</label>
+                    <label><input type="checkbox" name="tuesday">Tuesday</label>
+                    <label><input type="checkbox" name="wednesday">Wednesday</label>
+                    <label><input type="checkbox" name="thursday">Thursday</label>
+                    <label><input type="checkbox" name="friday">Friday</label>
+                </form>
             </div>
         </div>
     </div>
-</header>
-<div class="home-hero">
-    <h1>Welcome to TicoRides.com</h1>
-</div>
-<div class="page-title-cont">
-    <h2>Rides</h2>
-</div>
-<div class="nav-history-settings">
-    <a href="">Dashboard</a>
-    <i class="material-icons">keyboard_arrow_right</i>
-    <a href="">My Ride</a>
-    <i class="material-icons">keyboard_arrow_right</i>
-    <a href="">Edit</a>
-</div>
-<div class="holder">
-    <div class="forms-cont">
-        <div class="form-ride">
-            <form id="ride-form-basic">
-                <label for="ride-name">Ride Name</label>
-                <input type="text" name="ride-name">
-                <label for="ride-start-point">Start from</label>
-                <input type="text" name="ride-start-point">
-                <label for="ride-end-point">End</label>
-                <input type="text" name="ride-end-point">
-                <label for="ride-description">Description</label>
-                <textarea rows="a" cols="10" name="ride-description"></textarea>
-            </form>
-        </div>
-        <div class="form-ride">
-            <form id="ride-form-schedule">
-                <b>When</b>
-                <label for="departure">Departure</label>
-                <input type="number" name="departure">
-                <label for="arrival">Estimate arrival</label>
-                <input type="number" name="arrival">
-                <br>
-                <b>Select days</b>
-                <label><input type="checkbox" name="monday">Monday</label>
-                <label><input type="checkbox" name="tuesday">Tuesday</label>
-                <label><input type="checkbox" name="wednesday">Wednesday</label>
-                <label><input type="checkbox" name="thursday">Thursday</label>
-                <label><input type="checkbox" name="friday">Friday</label>
-            </form>
-        </div>
-    </div>
-</div>
+</body>
 
 </html>
